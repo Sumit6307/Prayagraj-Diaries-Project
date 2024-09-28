@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Mera Desh Mera Gaon Prayagraj</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50; /* Dark Green */
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #000; /* Black */
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #28a745; /* Green */
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #000; /* Black */
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .faq-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-size: 1.8rem;
+            color: #000; /* Black */
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .faq-item p {
+            font-size: 1rem;
+            color: #666;
+            margin: 10px 0 0;
+            display: none; /* Hidden by default */
+        }
+
+        .faq-item.active p {
+            display: block; /* Shown when active */
+        }
+
+        footer {
+            background-color: #000; /* Black */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Your questions answered</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Gallery.html" >Gallery</a>
+        <a href="history.html">History</a>  
+        <a href="Culture.html">Culture</a>
+        <a href="Festival.html" >Festivals</a>
+        <a href="Food.html">Food</a>
+        <a href="tourism.html">Tourism</a>
+        <a href="contact.html">Contact</a>       
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <section>
+        <h2>FAQ</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>What is the best time to visit Prayagraj?</h3>
+                <p>The best time to visit Prayagraj is during the winter months, from October to March, when the weather is pleasant and ideal for sightseeing.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I reach Prayagraj?</h3>
+                <p>Prayagraj can be reached by train, road, and air. The city is well-connected with major cities in India through these modes of transportation.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are there any special events or festivals in Prayagraj?</h3>
+                <p>Yes, Prayagraj hosts several significant events, including the Kumbh Mela, which is a major religious gathering held every 12 years, and the Magh Mela, an annual event attracting pilgrims and tourists.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What are some must-visit places in Prayagraj?</h3>
+                <p>Some must-visit places include the Triveni Sangam, Allahabad Fort, Anand Bhavan, and Khusro Bagh. Each site offers a unique glimpse into the city's rich history and culture.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Where can I find local accommodations?</h3>
+                <p>Prayagraj offers a range of accommodations from budget to luxury hotels. You can find options near major attractions and in different parts of the city to suit your preferences.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mera Desh Mera Gaon - Prayagraj. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for toggling FAQ answers
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                item.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

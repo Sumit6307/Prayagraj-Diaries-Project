@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera Sahar Mera Goan - Festivals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 60px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        nav {
+            background-color: #000; /* Black */
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #28a745; /* Green */
+            border-radius: 4px;
+        }
+
+       section {
+            padding: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .festivals-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .festival-item {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .festival-item:hover {
+            transform: scale(1.05);
+        }
+        .festival-item img {
+            
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .festival-item:hover img {
+            transform: scale(1.1);
+        }
+        .festival-item h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .festival-item p {
+            margin-bottom: 10px;
+        }
+        .festival-item .date {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-weight: bold;
+        }
+  
+        .images{
+           width: 400px;
+           height: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @media (max-width: 1024px) {
+            .festivals-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 768px) {
+            .festivals-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mera Sahar Mera Goan</h1>
+    <p>Experience the vibrant festivals of our cities and villages</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="history.html">History</a>
+    <a href="culture.html">Culture</a>
+    <a href="festivals.html">Festivals</a>
+    <a href="food.html">Food</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+</nav>
+
+<section id="festivals">
+    <h2>Celebrating the Festivals of Our Communities</h2>
+    <p>Festivals in our cities and villages are a true reflection of our cultural diversity and communal spirit. Each festival, filled with joy, color, and tradition, brings people together to celebrate life, heritage, and the seasons. Discover some of the most cherished festivals below.</p>
+
+    <div class="festivals-container">
+        <div class="festival-item">
+            <img  class="images" src="Photo-vs\images (6).jpg" alt="Festival 1">
+            <h3>Diwali - Festival of Lights</h3>
+            <span class="date">October-November</span>
+            <p>Diwali, the Festival of Lights, is celebrated with great enthusiasm across our cities and villages. Homes are adorned with oil lamps, candles, and vibrant rangolis, while fireworks light up the night sky. It is a time for family gatherings, delicious sweets, and worship.</p>
+        </div>
+        <div class="festival-item">
+            <img class="images" src="Photo-vs\download (7).jpg" alt="Festival 2">
+            <h3>Holi - Festival of Colors</h3>
+            <span class="date">March</span>
+            <p>Holi, known as the Festival of Colors, is one of the most joyous festivals celebrated in our communities. People of all ages take to the streets to throw colored powders, dance to traditional music, and enjoy festive foods, symbolizing the victory of good over evil.</p>
+        </div>
+        <div class="festival-item">
+            <img  class="images" src="Photo-vs\download (8).jpg" alt="Festival 3">
+            <h3>Eid al-Fitr - Festival of Breaking the Fast</h3>
+            <span class="date">April-May</span>
+            <p>Eid al-Fitr marks the end of Ramadan, the holy month of fasting. This festival is a time for prayers, feasts, and charity. Families come together to share meals, exchange gifts, and offer gratitude for the blessings received during the year.</p>
+        </div>
+        <div class="festival-item">
+            <img class="images" src="Photo-vs\download (9).jpg" alt="Festival 4">
+            <h3>Navratri - Festival of Worship and Dance</h3>
+            <span class="date">September-October</span>
+            <p>Navratri is a nine-night festival dedicated to the worship of the goddess Durga. It is celebrated with vibrant Garba and Dandiya dances, where people dressed in traditional attire come together to dance in honor of the goddess. The festival culminates in Dussehra, symbolizing the victory of good over evil.</p>
+        </div>
+        <div class="festival-item">
+            <img  class="images" src="Photo-vs\download (10).jpg" alt="Festival 5">
+            <h3>Christmas - Festival of Joy</h3>
+            <span class="date">December 25</span>
+            <p>Christmas is celebrated with great joy and fervor in our cities and villages. Churches are beautifully decorated, and people come together to attend midnight mass, exchange gifts, and share festive meals. It is a time of spreading love, peace, and goodwill.</p>
+        </div>
+        <div class="festival-item">
+            <img  class="images" src="Photo-vs\download (11).jpg" alt="Festival 6">
+            <h3>Pongal - Harvest Festival</h3>
+            <span class="date">January</span>
+            <p>Pongal is a harvest festival celebrated in the southern parts of our region. It is a four-day festival where people give thanks to the Sun God for a bountiful harvest. The festival includes cooking the traditional dish 'Pongal,' drawing kolams, and decorating cattle.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Mera Sahar Mera Goan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

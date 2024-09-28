@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Mera Desh Mera Gaon Prayagraj</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50; /* Dark Green */
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #000; /* Black */
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #28a745; /* Green */
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: calc(33.333% - 20px);
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item img {
+            
+            display: block;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover img {
+            opacity: 0.8;
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            padding: 20px;
+            text-align: center;
+        }
+
+      .images {
+          height: 600px;
+      }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #000; /* Black */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <p>Explore the beauty of Prayagraj</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Gallery.html" >Gallery</a>
+        <a href="history.html">History</a>  
+        <a href="Culture.html">Culture</a>
+        <a href="Festival.html" >Festivals</a>
+        <a href="Food.html">Food</a>
+        <a href="tourism.html">Tourism</a>
+        <a href="contact.html">Contact</a>       
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <section>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img  class="images" src="Photo-vs\images (2).jpg" alt="Description 1">
+                <div class="overlay">
+                    <h3>“A river cuts through rock, not because of its power, but because of its persistence.“</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img  class="images" src="Photo-vs\download.jpg" alt="Description 2">
+                <div class="overlay">
+                    <h3>In the heart of Allahabad, forgotten in the sands of time, lies a stunning Mughal monument called Khusro Bagh meaning “the gardens of Khusro”.</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img  class="images" src="Photo-vs\images (3).jpg"" alt="Description 3">
+                <div class="overlay">
+                    <h3>To nurture a garden is to feed not just the body, but the soul.</h3>
+                </div>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mera Desh Mera Gaon - Prayagraj. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
